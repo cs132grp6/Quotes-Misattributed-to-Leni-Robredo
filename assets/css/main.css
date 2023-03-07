@@ -124,7 +124,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #000000;
 	}
 
 	i, em {
@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #000000;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -2083,7 +2083,7 @@ input, select, textarea {
 			}
 
 			#nav a.active {
-				background: #484848;
+				background: red;
 			}
 
 				#nav a.active:before {
