@@ -167,7 +167,7 @@ Data was already preprocessed to follow a consistent formatting during data gath
 
 <ol style="color:black; text-align:left; font-size:21px;">
 
-<li><b>Ensuring no missing values</b></li>
+<li><b>Ensuring formatting consistency</b></li>
 <p> 
 Unnecessary columns and features (e.g. account ID, profile picture URL, etc.) returned by the scraper were deleted manually using a Python script.</li>
 Date strings from the scraper were re-formatted from YYYY-MM-DDTHH:MM:SS.XXXXZ to follow the format DD/MM/YY HH:MM, which were then preprocessed further to a pandas Datetime type with format YYYY-MM-DD HH:MM:SS.
@@ -183,7 +183,7 @@ Date strings from the scraper were re-formatted from YYYY-MM-DDTHH:MM:SS.XXXXZ t
 <br>
 </ul>
 
-<li><b>Ensuring formatting consistency</b></li>
+<li><b>Ensuring no missing values</b></li>
 <p>
 Among the required fields, only Account bio and Location had blank values. Blank values on these fields were allowed, since these features are not needed for the problem.
 </p>
