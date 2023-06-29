@@ -83,16 +83,24 @@ hr {
 <h2 style="text-align:left;">Data Modelling</h2>
 
 	<p style="color:black; text-align:left;">
-	
+	The preprocessed data was modelled using segmented linear regression with <b>Fisher z-transformation (α=0.05)</b>. Regression lines were fitted for before and during the campaign period (campaign period started in February, 2022). Then, the slopes of the regression lines were compared by calculating the Fisher z value. Fisher z transforms the distribution of the correlation coefficient into a normal distribution (Glen, n.d.).
+<br><br>
+Change-point detection was also conducted using the Pelt algorithm. The <b>Pelt algorithm</b> scans each data point sequentially, then for each data point, decides whether to keep it as a change-point based on the calculated cost of adding it as a change-point. The goal is to minimize the total cost (Truong, Oudre, & Vayatis, 2020). This project used the ruptures library implementation (ENS Paris-Saclay, 2020), tweaking the following parameters:
+
+<ul style="color:black; text-align:left; font-size:21px; padding-left:75px;">
+<li><b><i>model</i></b>: Cost function used. “rbf”, “l1”, and “l2” were explored.</li>
+<li><b><i>jump</i></b>: Only data point indices that are multiples of jump are scanned as candidate change-points. jump=1 to 5 were explored.</li>
+<li><b><i>pen</i></b>: Penalty value. Higher pen leads to fewer change-points. The range of pen explored depended on the values for model and jump.</li>
+</ul>
 	</p>
 
-<br>
+
 <hr>	
 
 <h2 style="text-align:left;">Model Interpretation</h2>
 
 	<p style="color:black; text-align:left;">
-	After data modelling, the significance of the found change-point dates was examined.
+	After data modelling, the significance of the found change-point dates was examined, comparing the dates with events and developments during the time period.
 	</p>
 
 <br>
@@ -106,25 +114,14 @@ hr {
 ENS Paris-Saclay. (2020). Exact segmentation: <i>Pelt</i>. http://dev.ipol.im/~truong/ruptures-docs/build/html/detection/pelt.html
 </p>
 <p class="hangingindent" style="color:black; text-align:left;">
+Glen, S. (n.d.). <i>Fisher z-transformation</i>. https://www.statisticshowto.com/fisher-z/
+</p>
+<p class="hangingindent" style="color:black; text-align:left;">
 Truong, C., Oudre, L., & Vayatis, N. (2020). <i>Selective review of offline change point detection methods</i>. http://www.laurentoudre.fr/publis/TOG-SP-19.pdf
 </p>
 
 
-
 <br>
-
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
 <hr>
 
 <p style="color:black; text-align:right;"> 

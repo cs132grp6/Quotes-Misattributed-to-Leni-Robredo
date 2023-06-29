@@ -68,14 +68,97 @@ hr {
 
 <h2 style="text-align:left;">Data Collection</h2>
 <p style="color:black; text-align:left;">
-The data was collected using the Apify actor <a href="https://apify.com/quacker/twitter-scraper">Twitter Scraper</a>. The scraper was configured to return at most 1000 tweets from at most 1000 accounts each. Scraping was performed in the middle of March, 2023, with the primary selection criteria being keywords related to known pieces of misinformation (i.e. misleading and/or incorrect quotes) related to Leni Robredo’s campaign. 152 tweets were collected after verifying their contents.
-
+The data was collected using the Apify actor <a href="https://apify.com/quacker/twitter-scraper">Twitter Scraper</a>. The scraper was configured to return at most 1000 tweets from at most 1000 accounts each. Scraping was performed in the middle of March, 2023, with the primary selection criteria being keywords related to known pieces of misinformation (i.e. misleading and/or incorrect quotes) related to Leni Robredo’s campaign. <b>152 tweets</b> were collected after verifying their contents.
+<br><br>
+<b>Search Keyword Distribution. </b> The distribution of tweets based on search keywords used is as follows:
 </p>
-<br>			
 <br>
-<hr>
-					
+<table class="center" style="color:black;">
+  <tr style="background-color: #D6EEEE;">
+    	<th style="width:40%; text-align:left; padding-left:15px;"><b>Search Keyword</b></th>
+    	<th style="width:27%; text-align:left;"><b>No. of Tweets Using the Keyword</b></th>
+  	<th style="width:27%"><b>Percent of Total</b></th>
+	</tr>
+  	
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Leni work from home nasa bahay</td>
+    	<td style="text-align:right; padding-right:130px;">65</td>
+    	<td style="text-align:right; padding-right:110px;">42.8 %</td>
+	</tr>
 
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">lugaw magkakagulo </td>
+    	<td style="text-align:right; padding-right:130px;">42 </td>
+    	<td style="text-align:right; padding-right:110px;">27.6 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Leni drug war UN </td>
+    	<td style="text-align:right; padding-right:130px;">13 </td>
+    	<td style="text-align:right; padding-right:110px;">8.6 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Leni Nababalot ng kadiliman iyong nakikita natin </td>
+    	<td style="text-align:right; padding-right:130px;">11 </td>
+    	<td style="text-align:right; padding-right:110px;">7.2 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">sundalo Scarborough </td>
+    	<td style="text-align:right; padding-right:130px;">6 </td>
+    	<td style="text-align:right; padding-right:110px;">3.9 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Leni magkakagulo talo </td>
+    	<td style="text-align:right; padding-right:130px;">3 </td>
+    	<td style="text-align:right; padding-right:110px;">1.9 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">ibabalik Aquino </td>
+    	<td style="text-align:right; padding-right:130px;">3 </td>
+    	<td style="text-align:right; padding-right:110px;">1.9 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Leni nuclear  </td>
+    	<td style="text-align:right; padding-right:130px;">3 </td>
+    	<td style="text-align:right; padding-right:110px;">1.9 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Leni resign otso diretso </td>
+    	<td style="text-align:right; padding-right:130px;">3 </td>
+    	<td style="text-align:right; padding-right:110px;">1.9 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;">Others  </td>
+    	<td style="text-align:right; padding-right:130px;">3 </td>
+    	<td style="text-align:right; padding-right:110px;">1.9 %</td>
+	</tr>
+
+	<tr>
+    	<td style="text-align:left; padding-left:15px;"><b>Total No. of Tweets</b> </td>
+    	<td style="text-align:right; padding-right:130px;"><b>152</b></td>
+    	<td style="text-align:right; padding-right:110px;"></td>
+	</tr>
+	
+</table>
+
+<p style="color:black; text-align:left;"> 
+<b>Data Features. </b> For this study, the relevant data features are:
+</p>
+<ul style="color:black; text-align:left; font-size:21px; padding-left:75px;">
+<li>Date posted</li>
+<li>Number of likes</li>
+<li>Number of retweets</li>
+</ul>
+
+					
+<hr>
 <h2 style="text-align:left;">Data Preprocessing</h2>
 <p style="color:black; text-align:left;"> 
 Data was already preprocessed to follow a consistent formatting during data gathering. 
